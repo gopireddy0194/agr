@@ -6,9 +6,8 @@ agent any
     {
 
 	echo " This job will pick files from other repo"
-        sh label: '', script: 'ls -a'
-              
-       sh label: '', script: 'mvn compile'  
+                      
+        sh label: '', script: 'mvn compile'  
     }
  }
 
