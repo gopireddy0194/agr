@@ -3,15 +3,7 @@ pipeline
     agent any
     
     stages{
-        stage('Continous download1')
-        {
-            steps
-            {
-		echo " This job will pick files from other repo"
-                git 'https://github.com/gopireddy0194/agr.git'
-            }
-        }
-	stage('Validate-again')
+      	stage('Validate-again')
 	{
 		steps
 		{
