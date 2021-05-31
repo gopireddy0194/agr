@@ -3,20 +3,13 @@ pipeline
     agent any
     
     stages{
+	   
       	stage('Validate-again')
 	{
 		steps
 		{
 		   sh label: '', script: 'mvn validate'
-		}
-	}
-        stage('compile-1')
-        {
-            steps
-            {
-              sh label: '', script: 'mvn compile'  
-            }
-            
+		}       
         }
         stage('test')
         {
